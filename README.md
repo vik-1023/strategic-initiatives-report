@@ -64,7 +64,7 @@ The report data is retrieved from a relational database using a custom SQL query
 
 ## Screenshot
 
-![Initiative Report](docs/Initiative%20Report.png)
+![Initiative Report](src/main/resources/static/docs/Initiative%20Report.png)
 
 
 
