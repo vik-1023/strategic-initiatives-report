@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Initiative Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { text-align: center; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+<h2>✅ Initiative Report</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Category</th>
+        <th>Subcategory</th>
+        <th>Total Count</th>
+        <th>Completed</th>
+        <th>Dropped</th>
+        <th>In Draft</th>
+        <th>In Progress</th>
+        <th>On Hold</th>
+        <th>Variance Sum</th>
+        <th>Delay (days)</th>
+        <th>Revenue Lost</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="r : ${report}">
+        <td th:text="${r.category}"></td>
+        <td th:text="${r.subcategory}"></td>
+        <td th:text="${r.totalCount}"></td>
+        <td th:text="${r.completed}"></td>
+        <td th:text="${r.dropped}"></td>
+        <td th:text="${r.inDraft}"></td>
+        <td th:text="${r.inProgress}"></td>
+        <td th:text="${r.onHold}"></td>
+        <td th:text="${r.varianceSum}"></td>
+        <td th:text="${r.delayDays}"></td>
+        <td th:text="${r.revenueLost}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
